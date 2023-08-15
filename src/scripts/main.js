@@ -1,9 +1,5 @@
 'use strict';
 
-// const openButton = document.querySelector('#menuOpenButton');
-// const closeButton = document.querySelector('#menuCloseButton');
-// const menu = document.querySelector('#menu');
-
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
     document.body.classList.add('page__body--with-menu');
@@ -12,8 +8,9 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-// window.addEventListener('scroll', () => {
-//   const scrolled = window.scrollY;
+const forms = document.querySelector('form');
 
-//   console.log(scrolled);
-// });
+forms.addEventListener('submit', function(event) {
+  event.preventDefault();
+  forms.reset();
+});

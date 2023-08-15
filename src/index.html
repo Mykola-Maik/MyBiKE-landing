@@ -12,7 +12,6 @@
     >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link
       rel="icon"
       type="image/x-icon"
@@ -20,12 +19,12 @@
     >
     <script src="scripts/main.js" defer></script>
   </head>
-  <body class="page__body">
+  <body class="page__body" id="home">
     <header class="page__section header">
       <div class="container">
         <div class="header__content">
           <div class="header__top">
-            <a class="logo" href="/">
+            <a class="logo" href="./index.html">
               <img
                 class="logo__image"
                 src="./images/logo.svg"
@@ -58,7 +57,7 @@
       <div class="container">
         <div class="menu__content">
           <div class="menu__top">
-            <a class="logo" href="/">
+            <a class="logo" href="./index.html">
               <img
                 class="logo__image"
                 src="./images/logoDark.svg"
@@ -71,7 +70,7 @@
 
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">Home</a>
+              <a href="#home" class="menu__link">Home</a>
             </li>
             <li class="menu__item">
               <a href="#aboutUs" class="menu__link">About Us</a>
@@ -88,14 +87,14 @@
           </ul>
 
           <a
-            href="tell:+1 234 5555-55-55"
+            href="tel:+1 234 5555-55-55"
             class="menu__call menu__call--phone"
           >
             +1 234 5555-55-55
           </a>
 
           <a
-            href="tell:+1 234 5555-55-55"
+            href="tel:+1 234 5555-55-55"
             class="menu__call menu__call--action"
           >
             Book a test ride
@@ -141,7 +140,6 @@
             <div class="compare__item grid__item grid__item--1-4">
               <article
                 class="card"
-                data-aos="fade-right"
               >
                 <div class="card__image-container">
                   <img
@@ -160,12 +158,12 @@
             </div>
 
             <div class="compare__item grid__item grid__item--5-8">
-              <article class="card" data-aos="fade-up">
+              <article class="card">
                 <div class="card__image-container">
                   <img
                     class="card__image"
                     src="images/photos/rideInTownST.jpg"
-                    alt="sporty4"
+                    alt="Ride in town ST bike"
                   >
                 </div>
                 <h3 class="card__title">Ride in town ST</h3>
@@ -178,12 +176,12 @@
             </div>
 
             <div class="compare__item grid__item grid__item--9-12">
-              <article class="card" data-aos="fade-left">
+              <article class="card">
                 <div class="card__image-container">
                   <img
                     class="card__image"
                     src="images/photos/agileRide3.jpg"
-                    alt="sporty4"
+                    alt="Agile ride 3"
                   >
                 </div>
                 <h3 class="card__title">Agile ride 3</h3>
@@ -213,10 +211,10 @@
                 <div
                   class="grid__item grid__item--desktop-1-8 grid__item--tablet-1-4"
                 >
-                  <div class="parts__image-container" data-aos="fade-right">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details1.jpg"
-                      alt="part1"
+                      alt="Lightweight feature"
                       class="parts__image"
                     >
                   </div>
@@ -224,10 +222,10 @@
                 <div
                   class="grid__item grid__item--desktop-9-12 grid__item--tablet-5-6"
                 >
-                  <div class="parts__image-container" data-aos="fade-left">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details2.jpg"
-                      alt="part1"
+                      alt="Lightweight feature"
                       class="parts__image"
                     >
                   </div>
@@ -250,10 +248,10 @@
                 <div
                   class="grid__item grid__item--desktop-1-8 grid__item--tablet-1-4"
                 >
-                  <div class="parts__image-container" data-aos="fade-right">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details3.jpg"
-                      alt="part1"
+                      alt="Range & Integrated lights"
                       class="parts__image"
                     >
                   </div>
@@ -261,10 +259,10 @@
                 <div
                   class="grid__item grid__item--desktop-9-12 grid__item--tablet-5-6"
                 >
-                  <div class="parts__image-container" data-aos="fade-left">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details4.jpg"
-                      alt="part1"
+                      alt="Range & Integrated lights"
                       class="parts__image"
                     >
                   </div>
@@ -287,10 +285,10 @@
                 <div
                   class="grid__item grid__item--desktop-1-4 grid__item--tablet-1-2"
                 >
-                  <div class="parts__image-container" data-aos="fade-right">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details5.jpg"
-                      alt="part1"
+                      alt="Hydraulic disc brakes & Lightweight"
                       class="parts__image"
                     >
                   </div>
@@ -298,10 +296,10 @@
                 <div
                   class="grid__item grid__item--desktop-5-12 grid__item--tablet-3-6"
                 >
-                  <div class="parts__image-container" data-aos="fade-left">
+                  <div class="parts__image-container">
                     <img
                       src="images/photos/details6.jpg"
-                      alt="part1"
+                      alt="Hydraulic disc brakes & Lightweight"
                       class="parts__image"
                     >
                   </div>
@@ -340,7 +338,7 @@
 
           <div class="grid grid--tablet">
             <div class="grid__item grid__item--tablet-1-3 grid__item--desktop-1-5">
-              <form method="get">
+              <form method="post" action="#">
                 <input
                   name="name"
                   type="text"
@@ -367,7 +365,7 @@
                 ></textarea>
 
                 <button
-                  type="submit"
+                  type="menu"
                   class="button contact-us__button"
                 >
                   Send
@@ -392,10 +390,10 @@
                   Email
                 </div>
                 <a
-                  href="mailto:hello@miami.com"
+                  href="mailto:mukoluamaik@gmail.com"
                   class="contact-us__info-link"
                 >
-                  hello@miami.com
+                  mukoluamaik@gmail.com
                 </a>
               </div>
               <div class="contact-us__info">
@@ -421,9 +419,5 @@
     </main>
 
     <footer class="footer"></footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
